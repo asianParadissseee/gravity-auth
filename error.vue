@@ -1,7 +1,6 @@
 <template>
   <div>
     Sorry bro error, please try again later.
-    <
   </div>
 </template>
 

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-console.log("4ort")
+
 </script>
 
 <template>
   <div>
-    lox
+
   </div>
 </template>
 

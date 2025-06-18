@@ -1,13 +1,13 @@
 <script setup lang="ts">
-console.log("4ort")
+
 </script>
 
 <template>
   <div>
-    lox
+    <slot></slot>
   </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 
 </style>
