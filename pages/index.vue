@@ -1,10 +1,10 @@
-<script setup lang="ts">
-console.log("4ort")
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-    lox
+  <div class="h-svh flex items-center">
+    <login-layout>
+      lox
+    </login-layout>
   </div>
 </template>
 

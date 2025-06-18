@@ -4,6 +4,9 @@
 onMounted(() => {
   document.body.style.background = 'radial-gradient(circle at top left, #e0d4ff, #fbe5e6, #ffffff)'
 })
+onUnmounted(() => {
+  document.body.style.background = ''
+})
 </script>
 
 <template>
