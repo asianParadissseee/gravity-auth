@@ -9,6 +9,6 @@ app.use(bodyParser.json());
 
 app.use('/api/v1', users);
 
-app.listen(3000, () => {
+app.listen(8080, () => {
     console.log('Server started on http://localhost:8080');
 });

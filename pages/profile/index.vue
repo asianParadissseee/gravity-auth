@@ -1,19 +1,27 @@
 <script setup lang="ts">
 
 
+import {storeToRefs} from "pinia";
+
 onMounted(() => {
   document.body.style.background = 'radial-gradient(circle at top left, #e0d4ff, #fbe5e6, #ffffff)'
 })
 onUnmounted(() => {
   document.body.style.background = ''
 })
+
+const {user} = storeToRefs(useUsersStore())
+const {actions: userActions} = useUsersStore()
+onMounted(()=> {
+  userActions.getUser()
+})
 </script>
 
 <template>
   <div class="h-svh flex justify-center items-center">
     <div class="flex justify-center flex-col items-center">
-      <h1 class="text-6xl font-semibold">
-        Добро пожаловать
+      <h1 class="text-6xl font-semibold text-center">
+        Добро пожаловать {{user?.name || ''}}
       </h1>
       <p class="text-center mt-3 font-normal text-gray-700">
         Вы успешно вошли в систему. Теперь у вас есть доступ к <br> защищённым ресурсам и персонализированным настройкам.

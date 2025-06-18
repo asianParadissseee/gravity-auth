@@ -1,75 +1,35 @@
-# Nuxt Minimal Starter
+# Пример авторизацииAdd commentMore actions
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Запуск клиента:
 
-## Setup
 
-Make sure to install dependencies:
+# Запуск сервера
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+cd server-api
+```
+Зависимости:
+```bash
+npm i
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Запуск в обычном режиме:
 
 ```bash
-# npm
+npm run start
+```
+
+Запуск в режиме разработки:
+
+```bash
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
+### Endpoints
 
-## Production
+1. POST /api/v1/register
 
-Build the application for production:
+2. POST /api/v1/login
 
-```bash
-# npm
-npm run build
+3. GET /api/v1/user (в заголовке Authorization: <token>, без Bearer)
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+4. POST /api/v1/forgot-password
