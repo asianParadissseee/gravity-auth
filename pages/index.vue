@@ -1,9 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+
+</script>
 
 <template>
   <div class="h-svh flex items-center">
     <login-layout>
-      lox
+      <u-input />
+      <u-input />
     </login-layout>
   </div>
 </template>
