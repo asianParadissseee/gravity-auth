@@ -1,5 +1,5 @@
-./server-api/node_modules
 
+./server-api/node_modules
 # Nuxt dev/build outputs
 .output
 .data
@@ -17,6 +17,8 @@ logs
 
 # Misc
 .DS_Store
+.fleet
+.idea
 
 # Local env files
 .env
